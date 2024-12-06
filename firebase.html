@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lectura del Invernadero en Tiempo Real</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/render_rows.js" defer></script>
+</head>
+<body>
+  <!-- Encabezado de la página -->
+  <header class="main-header">
+    <h1>Lectura Del Invernadero Desde Firebase</h1>
+  </header>
+
+  <!-- Sección de contenido -->
+  <section class="content-section">
+    <div class="info-box">
+      <h2>Datos del Invernadero</h2>
+      <p>Monitoreo en tiempo real de temperatura, humedad y más...</p>
+    </div>
+
+    <!-- Tabla de datos -->
+    <div class="data-table-container">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Fecha y Hora</th>
+            <th>Temperatura (°C)</th>
+            <th>Humedad del Aire (%)</th>
+            <th>Humedad del Suelo (%)</th>
+          </tr>
+        </thead>
+        <tbody id="table_register">
+          <!-- Las filas de datos se agregarán dinámicamente -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>Desarrollado por TuNombre - 2024</p>
+  </footer>
+</body>
+</html>
+
